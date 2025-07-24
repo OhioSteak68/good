@@ -21,6 +21,7 @@ local function processQueue()
 	task.spawn(function()
 		for _, testData in ipairs(queuedTests) do
 			local name = testData.name
+			print("Testing: "..name)
 			local aliases = testData.aliases
 			local callback = testData.callback
 
