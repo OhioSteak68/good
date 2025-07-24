@@ -53,7 +53,7 @@ local function processQueue()
 				warn("⚠️ " .. table.concat(undefinedAliases, ", "))
 			end
 
-			task.wait(1)
+			task.wait(0.5)
 			running -= 1
 		end
 	end)
